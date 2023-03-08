@@ -37,7 +37,7 @@ Route::prefix('/product')->group(function () {
     Route::get('/drink', [ProductController::class, 'drink'])->name('drink');
 });
 
-Route::get('/news/{id}', [NewsController::class, 'news']);
+Route::get('/news/{id}', [NewsController::class, 'news'])->name('news');
 
 Route::prefix('/program')->group(function () {
     Route::get('/ultah', [ProgramController::class, 'ultah'])->name('ultah');
